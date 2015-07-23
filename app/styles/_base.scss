@@ -1,0 +1,7 @@
+.browsehappy {
+  @include container(1180px); //susy test
+  background: #ccc;
+  color: #000;
+  margin: .2em 0;
+  padding: .2em 0;
+}
