@@ -27,7 +27,7 @@
     "gulp-uglify": "^0.2.1",
     "gulp-useref": "^0.4.2",
     "gulp-util": "^3.0.1",
-    "gulp-spritesmith": "^2.4.0",
+    "gulp.spritesmith": "^2.4.0",
     "jshint-stylish": "^0.2.0",
     "rsyncwrapper": "^0.4.1",
     "run-sequence": "^1.0.1",
