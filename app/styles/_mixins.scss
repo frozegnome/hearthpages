@@ -18,3 +18,14 @@
 		-1px  1px 0 #000,
 		1px  1px 0 #000;
 }
+
+@mixin arrow($degrees) {
+  border-right: 0.2em solid white;
+  border-top: 0.2em solid white;
+  height: 1em;
+  left: 0.95em;
+  position: absolute;
+  top: 0.75em;
+  transform: rotate($degrees);
+  width: 1em;
+}
