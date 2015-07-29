@@ -1,5 +1,8 @@
-'use strict';
+(function () {
+	'use strict';
 
-$(document).ready(function () {
-  console.log('Hello world!');
-});
+	var s = skrollr.init();
+
+	s.refresh($('.banner-bg'));
+
+}());

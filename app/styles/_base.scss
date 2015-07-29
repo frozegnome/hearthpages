@@ -25,21 +25,14 @@ a {
 	text-decoration: none;
 }
 
-.banner-bg {
-	background: url(../images/hearthstone-bg.jpg) no-repeat;
-	background-size: cover;
-	filter: blur(5px) brightness(65%);
-	height: 100%;
-	left: 0;
-	position: fixed;
-	right: 0;
-}
-
 main {
 	height: 100%;
 	width: 100%;
 	overflow-y: scroll;
 	position: fixed;
+}
+
+section {
 	text-align: center;
 
 	p {
@@ -51,6 +44,17 @@ main {
 		padding: 30px 0;
 		text-align: center;
 	}
+}
+
+.banner-bg {
+	background: url(../images/hearthstone-bg.jpg) no-repeat;
+	background-size: cover;
+	filter: blur(5px) brightness(65%);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	z-index: -1;
 }
 
 .circle-btn {
