@@ -1,11 +1,15 @@
-html {
+html, body {
 	height: 100%;
+	margin: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0px;
+	width: 100%;
 }
 
 body {
 	background: $brand-dark;
-	margin: 0;
-	width: 100%;
+	color: $brand-light;
 }
 
 header {
@@ -14,7 +18,6 @@ header {
 
 	h1 {
 		@include overlay-shadow;
-		color: $brand-light;
 		font-family: 'Bitter', 700;
 		font-size: 50px;
 		margin: 5px 0;
@@ -25,20 +28,27 @@ a {
 	text-decoration: none;
 }
 
-main {
-	height: 100%;
+footer {
+	background: rgba(0, 0, 0, .65);
+	font-family: 'Roboto', 400;
+	padding: 8px 5.5% 8px 5.5%;
 	width: 100%;
-	overflow-y: scroll;
-	position: fixed;
 }
 
-section {
+main {
+	height: 100%;
+	overflow-y: scroll;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.home {
 	text-align: center;
 
 	p {
 		@include overlay-shadow;
 		background: rgba(0, 0, 0, .65);
-		color: $brand-light;
 		font-family: 'Bitter', 400;
 		font-size: 36px;
 		padding: 30px 0;
@@ -70,4 +80,13 @@ section {
 	.down-arrow {
 		@include arrow(135deg);
 	}
+}
+
+.pages {
+	background-color: $brand-basic;
+	background-size: cover;
+	border: 0.3em solid white;
+	height: 100%;
+	margin-left: 5.5%;
+	width: 90%;
 }
