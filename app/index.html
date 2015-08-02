@@ -8,7 +8,6 @@
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
-
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -18,7 +17,9 @@
     <link rel="stylesheet" href="/styles/main.css">
     <!-- endbuild -->
     <!-- build:js /scripts/vendor/modernizr.js -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/jquery/dist/jquery.scrollTo.min.js"></script>
     <!-- endbuild -->
   </head>
   <body>
@@ -34,12 +35,24 @@
           <!-- placeholder image -->
           <img src="/images/parchment.png" />
         </div>
-        <a href="#slide-page" class="circle-btn">
+        <a href="#" id="circle-slide" class="circle-btn">
           <div class="down-arrow"></div>
         </a>
       </div>
     </section>
-    <section id="slide-page" class="pages">
+    <section id="slide-page" class="book-section">
+      <div id="flipbook"></div>
+        <div class="cover hard">ff</div>
+        <div class="page">ff</div>
+        <div class="page">ff</div>
+        <div class="page">ff</div>
+        <div class="page">ff</div>
+        <div class="page">ff</div>
+        <div class="page">ff</div>
+        <div class="page">ff</div>
+        <div class="page">ff</div>
+        <div class="back hard">ff</div>
+      </div>
     </section>
     <footer>
       Hearthstone© and Blizzard Entertainment© are all trademarks or registered trademarks of Blizzard Entertainment in the United States and/or other countries. These terms and all related materials, logos, and images are copyright © Blizzard Entertainment. This site is in no way associated with or endorsed by Blizzard Entertainment©
@@ -63,6 +76,7 @@
     <!-- endbuild -->
 
     <!-- build:js /scripts/main.js -->
+    <script src="/scripts/turn.js"></script>
     <script src="/scripts/main.js"></script>
     <!-- endbuild -->
   </body>

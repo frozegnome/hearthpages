@@ -31,7 +31,7 @@ a {
 footer {
 	background: rgba(0, 0, 0, .65);
 	font-family: 'Roboto', 400;
-	padding: 8px 5.5% 8px 5.5%;
+	padding: 40px 5.5% 20px 5.5%;
 	width: 100%;
 }
 
@@ -82,11 +82,22 @@ main {
 	}
 }
 
-.pages {
+.book-section {
 	background-color: $brand-basic;
 	background-size: cover;
-	border: 0.3em solid white;
+	border-top: 0.3em solid white;
+	border-bottom: 0.3em solid white;
 	height: 100%;
-	margin-left: 5.5%;
-	width: 90%;
+}
+
+.page {
+	background: url(../images/parchment.jpg) no-repeat;
+}
+
+.cover {
+	background: url(../images/hearthstone-bg.jpg) no-repeat;
+}
+
+.back {
+	background: url(../images/hearthstone-bg.jpg) no-repeat;
 }
