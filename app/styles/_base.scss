@@ -31,12 +31,13 @@ a {
 footer {
 	background: rgba(0, 0, 0, .65);
 	font-family: 'Roboto', 400;
-	padding: 40px 5.5% 20px 5.5%;
+	padding: 40px 5.5% 20px;
 	width: 100%;
 }
 
 main {
 	height: 100%;
+	overflow-x: hidden;
 	overflow-y: scroll;
 	position: absolute;
 	text-align: center;
@@ -88,10 +89,17 @@ main {
 	border-top: 0.3em solid white;
 	border-bottom: 0.3em solid white;
 	height: 100%;
+	position: relative;
+}
+
+.book {
+	margin: 7% 9%;
+	position: relative;
 }
 
 .page {
-	background: url(../images/parchment.jpg) no-repeat;
+	background: url(../images/parchment.gif) no-repeat;
+	background-size: cover;
 }
 
 .cover {

@@ -5,13 +5,17 @@
 	$(document).ready(function() {
 
 		//animation for slide-pages
-		$('#circle-slide').on('click', function() {
-			$('body').scrollTo('#slide-page');
+		$('#circle-slide').click(function() {
+			$('html, body').animate({
+				scrollTop: $('#slide-page')
+			}, 2000);
+			console.log('clicked');
 		});
 
+		//turn.js integration
 		$('#flipbook').turn({
-			width: 400,
-			height: 300,
+			width: 1600,
+			height: 600,
 			autoCenter: true
 		});
 	});
