@@ -13,6 +13,7 @@ body {
 }
 
 header {
+	margin-bottom: 50px;
 	text-align: center;
 	width: 100%;
 
@@ -29,7 +30,6 @@ a {
 }
 
 footer {
-	background: rgba(0, 0, 0, .65);
 	font-family: 'Roboto', 400;
 	padding: 40px 5.5% 20px;
 	width: 100%;
@@ -45,6 +45,7 @@ main {
 }
 
 .home {
+	height: 100%;
 	text-align: center;
 
 	p {
@@ -68,6 +69,10 @@ main {
 	z-index: -1;
 }
 
+.sec-container {
+	height: 100%;
+}
+
 .circle-btn {
 	border: 2px solid;
 	border-color: $brand-light;
@@ -84,17 +89,14 @@ main {
 }
 
 .book-section {
-	background-color: $brand-basic;
-	background-size: cover;
+	background: rgba(0, 0, 0, .65);
 	border-top: 0.3em solid white;
 	border-bottom: 0.3em solid white;
-	height: 100%;
-	position: relative;
+	height: inherit;
 }
 
 .book {
-	margin: 7% 9%;
-	position: relative;
+	padding: 15px 0 0 5px;
 }
 
 .page {
@@ -103,9 +105,11 @@ main {
 }
 
 .cover {
-	background: url(../images/hearthstone-bg.jpg) no-repeat;
+	background: url(../images/bookcover.png) no-repeat;
+	background-size: cover;
 }
 
 .back {
-	background: url(../images/hearthstone-bg.jpg) no-repeat;
+	background: url(../images/bookbacks.jpg) no-repeat;
+	background-size: cover;
 }
