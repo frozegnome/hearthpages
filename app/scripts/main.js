@@ -29,17 +29,25 @@ console.log($(window).outerWidth());
       elevation: 80,
       when: {
       	turned: function (e, page) {
-
+      		console.log('page turned');
       	}
       }
 		});
 	});
 
+	function positionBook() {
+      var viewPortHeight = document.getElementById('zoomView').scrollHeight;
+
+      $('.zoom-viewport').height();
+      var newTop = (viewPortHeight - $('#fbContainer').height()) / 2;
+
+      $('#fbContainer').css('top', newTop + 'px');
+  }
+
 	window.onresize = function () {
       setTimeout(function () {
-          //setZoomPortHeight();
           sizeFlipBook();
-          //positionBook();
+          positionBook();
           if (container.turn('page') === 1) {
               var size = container.turn('size').width / 2 * -1;
               container.css({ marginLeft: size });
