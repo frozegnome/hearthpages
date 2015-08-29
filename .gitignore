@@ -1,7 +1,6 @@
-node_modules
-dist
-.tmp
-.sass-cache
-app/bower_components
-npm-debug.log
-Gemfile.lock
+node_modules/
+bower_components/
+.sass-cache/
+.idea/
+.tmp/
+dist/
