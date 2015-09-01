@@ -149,3 +149,19 @@ main {
 	background: url(/assets/images/bookbacks.jpg) no-repeat;
 	background-size: cover;
 }
+
+.back:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba( 84, 51, 0, 0.35);
+}
+
+.inner {
+	background: url(/assets/images/bookbacks.jpg) cover;
+	transform: rotate(180deg);
+}

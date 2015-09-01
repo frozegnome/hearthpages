@@ -13,5 +13,12 @@
     "angular": false,
     "inject": false,
     "module": false
-  }
+  },
+  "predef": [
+    "$",
+    "document",
+    "window",
+    "console",
+    "setTimeout"
+  ]
 }
