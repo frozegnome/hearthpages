@@ -13,8 +13,7 @@ body {
 }
 
 header {
-	background: rgba(0, 0, 0, .65);
-	padding-bottom: 10px;
+	margin-bottom: 50px;
 	text-align: center;
 	width: 100%;
 
@@ -96,7 +95,7 @@ main {
 }
 
 .banner-bg {
-	background: url(../images/hearthstone-bg.jpg) no-repeat;
+	background: url(/assets/images/hearthstone-bg.jpg) no-repeat;
 	background-size: cover;
 	filter: blur(5px) brightness(65%);
 	height: 100%;
@@ -137,16 +136,16 @@ main {
 }
 
 .page {
-	background: url(../images/parchment.gif) no-repeat;
+	background: url(/assets/images/parchment.gif) no-repeat;
 	background-size: cover;
 }
 
 .cover {
-	background: url(../images/bookcover.png) no-repeat;
+	background: url(/assets/images/bookcover.png) no-repeat;
 	background-size: 100% 100%;
 }
 
 .back {
-	background: url(../images/bookbacks.jpg) no-repeat;
+	background: url(/assets/images/bookbacks.jpg) no-repeat;
 	background-size: cover;
 }

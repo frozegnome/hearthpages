@@ -47,7 +47,8 @@
     "http-proxy-middleware": "~0.0.5",
     "chalk": "~1.0.0",
     "uglify-save-license": "~0.4.1",
-    "wrench": "~1.5.8"
+    "wrench": "~1.5.8",
+    "wiredep": "^1.4.3"
   },
   "engines": {
     "node": ">=0.10.0"

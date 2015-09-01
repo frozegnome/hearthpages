@@ -1,32 +1,50 @@
-<div class="container">
-
-  <div>
-    <acme-navbar creationDate="main.creationDate" />
-  </div>
-
-  <div class="jumbotron">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">
-      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-      Always a pleasure scaffolding your apps.
-    </p>
-    <p class="animated infinite" ng-class="main.classAnimation">
-      <a class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</a>
-    </p>
-    <p>
-      With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']" />
-    </p>
-  </div>
-
-  <div class="col" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
-    <div class="thumbnail">
-      <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
-      <div class="caption">
-        <h3>{{ awesomeThing.title }}</h3>
-        <p>{{ awesomeThing.description }}</p>
-        <p><a ng-href="{{ awesomeThing.url }}">{{ awesomeThing.url }}</a></p>
+<main>
+  <section class="home">
+    <div class="banner-bg"></div>
+    <div class="sec-container">
+      <header>
+        <h1>Hearthpages</h1>
+      </header>
+      <p>Get in Here!!</p>
+      <a href="#slide-page" id="circle-slide" class="circle-btn">
+        <div class="down-arrow"></div>
+      </a>
+    </div>
+  </section>
+  <section id="slide-page" class="book-section">
+    <nav>
+      <ul>
+        <a href=""><li class="effect-li">TAUNT</li></a>
+        <a href=""><li class="effect-li">BATTLECRY</li></a>
+        <a href=""><li class="effect-li">DEATHRATTLE</li></a>
+        <a href=""><li class="effect-li">INSPIRE</li></a>
+        <a href=""><li class="class-li">DRUID</li></a>
+        <a href=""><li class="class-li">HUNTER</li></a>
+        <a href=""><li class="class-li">MAGE</li></a>
+        <a href=""><li class="class-li">PALADIN</li></a>
+        <a href=""><li class="class-li">PRIEST</li></a>
+        <a href=""><li class="class-li">SHAMAN</li></a>
+        <a href=""><li class="class-li">WARRIOR</li></a>
+        <a href=""><li class="class-li">WARLOCK</li></a>
+        <a href=""><li>CLEAR</li></a>
+      </ul>
+    </nav>
+    <div class="book">
+      <div id="flipbook">
+        <div class="cover hard"></div>
+        <div class="back hard"></div>
+        <div class="page">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, eius iste ipsa fugit ab iusto explicabo vel assumenda, nam unde totam atque obcaecati earum molestias eligendi temporibus eaque delectus facere.</div>
+        <div class="page">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis vel numquam dolores repudiandae quos deserunt eos consequuntur ut officia. Ducimus dicta quibusdam placeat facilis! Dolor quo molestias culpa, unde.</div>
+        <div class="page">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nulla quisquam quas voluptate laboriosam optio ab eos saepe similique voluptatibus ipsum ut, officia aliquid odit quod ipsam dolorem tempore cupiditate?</div>
+        <div class="page">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ullam minus vel rerum accusamus ea quasi culpa repudiandae in atque. Nobis fugit qui optio tenetur ducimus porro, id pariatur suscipit!</div>
+        <div class="page">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, minus ducimus quam. A iste sunt accusamus doloribus temporibus consectetur aliquid ex, vero perspiciatis nesciunt iure similique deserunt, neque recusandae, beatae.</div>
+        <div class="page">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque fugit similique saepe facilis, architecto cumque minus est perferendis, officia illum suscipit molestias distinctio quidem, quod omnis. Dolorem totam, quis vel?</div>
+        <div class="back hard"></div>
+        <div class="back hard"></div>
       </div>
     </div>
-  </div>
-
-</div>
+  </section>
+  <footer>
+    Hearthstone© and Blizzard Entertainment© are all trademarks or registered trademarks of Blizzard Entertainment in the United States and/or other countries. These terms and all related materials, logos, and images are copyright © Blizzard Entertainment. This site is in no way associated with or endorsed by Blizzard Entertainment©
+  </footer>
+</main>

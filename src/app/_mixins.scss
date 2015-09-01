@@ -12,20 +12,20 @@
 
 @mixin overlay-shadow {
 	text-shadow:
-		3px 3px 0 #000,
-		-1px -1px 0 #000,  
-		1px -1px 0 #000,
-		-1px  1px 0 #000,
-		1px  1px 0 #000;
+		3px 3px 0 $brand-dark,
+		-1px -1px 0 $brand-dark,  
+		1px -1px 0 $brand-dark,
+		-1px  1px 0 $brand-dark,
+		1px  1px 0 $brand-dark;
 }
 
 @mixin arrow($degrees) {
-  border-right: 0.2em solid white;
-  border-top: 0.2em solid white;
+  border-right: .2em solid $brand-light;
+  border-top: .2em solid $brand-light;
   height: 1em;
-  left: 0.95em;
+  left: .95em;
   position: absolute;
-  top: 0.75em;
+  top: .75em;
   transform: rotate($degrees);
   width: 1em;
 }
