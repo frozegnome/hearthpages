@@ -1,167 +1,169 @@
-html, body {
-	height: 100%;
-	margin: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding: 0;
-	width: 100%;
+
+html, 
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+  width: 100%;
 }
 
 body {
-	background: $brand-dark;
-	color: $brand-light;
+  background: $brand-dark;
+  color: $brand-light;
 }
 
 header {
-	margin-bottom: 50px;
-	text-align: center;
-	width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
 
-	h1 {
-		@include overlay-shadow;
-		font-family: 'Bitter', 700;
-		font-size: 50px;
-		margin: 5px 0;
-	}
+  h1 {
+    @include overlay-shadow;
+    font-family: 'Bitter', 700;
+    font-size: 50px;
+    margin: 5px 0;
+  }
 }
 
 nav {
-	li {
-		border: 1px solid $brand-light;
-		color: $brand-light;
-		display: inline-block;
-		font-family: 'Roboto', 400;
-		padding: 3px 6px;
-		transition: color .5s, background-color .5s;
-	}
+  li {
+    border: 1px solid $brand-light;
+    color: $brand-light;
+    display: inline-block;
+    font-family: 'Roboto', 400;
+    padding: 3px 6px;
+    transition: color .5s, background-color .5s;
+  }
 
-	li:hover {
-		color: $brand-basic;
-		background-color: $brand-light;
-	}
-
-	.effect-li {
-		border: 1px solid $brand-purple;
-		color: $brand-purple;
-	}
-
-	.effect-li:hover {
-		background-color: $brand-purple;
-		color: $brand-basic;
-	}
-
-	.class-li {
-		border: 1px solid $brand-red;
-		color: $brand-red;
-	}
-
-	.class-li:hover {
-		background-color: $brand-red;
-		color: $brand-basic;
-	}
+  li:hover {
+    background-color: $brand-light;
+    color: $brand-basic;
+  }
+  
+  .effect-li {
+    border: 1px solid $brand-purple;
+    color: $brand-purple;
+  }
+  
+  .effect-li:hover {
+    background-color: $brand-purple;
+    color: $brand-basic;
+  }
+  
+  .class-li {
+    border: 1px solid $brand-red;
+    color: $brand-red;
+  }
+  
+  .class-li:hover {
+    background-color: $brand-red;
+    color: $brand-basic;
+  }
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 footer {
-	font-family: 'Roboto', 400;
-	padding: 40px 5.5% 20px;
-	width: 100%;
+  font-family: 'Roboto', 400;
+  padding: 40px 5.5% 20px;
+  width: 100%;
 }
 
 main {
-	height: 100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	position: absolute;
-	text-align: center;
-	width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 .home {
-	height: 100%;
-	text-align: center;
+  height: 100%;
+  text-align: center;
 
-	p {
-		@include overlay-shadow;
-		background: rgba(0, 0, 0, .65);
-		font-family: 'Bitter', 400;
-		font-size: 36px;
-		padding: 30px 0;
-		text-align: center;
-	}
+  p {
+    @include overlay-shadow;
+    background: rgba(0, 0, 0, .65);
+    font-family: 'Bitter', 400;
+    font-size: 36px;
+    padding: 30px 0;
+    text-align: center;
+  }
 }
 
 .banner-bg {
-	background: url(/assets/images/hearthstone-bg.jpg) no-repeat;
-	background-size: cover;
-	filter: blur(5px) brightness(65%);
-	height: 100%;
-	left: 0;
-	position: fixed;
-	right: 0;
-	z-index: -1;
+  background: url('/assets/images/hearthstone-bg.jpg') no-repeat;
+  background-size: cover;
+  filter: blur(5px) brightness(65%);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: -1;
 }
 
 .sec-container {
-	height: 100%;
+  height: 100%;
 }
 
 .circle-btn {
-	border: 2px solid;
-	border-color: $brand-light;
-	border-radius: 100%;
-	display: inline-block;
-	margin: 20px 0;
-	position: relative;
-	height: 50px;
-	width: 50px;
-
-	.down-arrow {
-		@include arrow(135deg);
-	}
+  border: 2px solid;
+  border-color: $brand-light;
+  border-radius: 100%;
+  display: inline-block;
+  height: 50px;
+  margin: 20px 0;
+  position: relative;
+  width: 50px;
+  
+  .down-arrow {
+    @include arrow(135deg);
+  }
 }
 
 .book-section {
-	background: $brand-basic-lighter;
-	border-top: 0.1em solid $brand-light;
-	border-bottom: 0.1em solid $brand-light;
-	height: inherit;
+  background: $brand-basic-lighter;
+  border-bottom: .1em solid $brand-light;
+  border-top: .1em solid $brand-light;
+  height: inherit;
 }
 
 .book {
-	padding: 15px 0 0 5px;
+  padding: 15px 0 0 5px;
 }
 
 .page {
-	background: url(/assets/images/parchment.gif) no-repeat;
-	background-size: cover;
+  background: url('/assets/images/parchment.gif') no-repeat;
+  background-size: cover;
 }
 
 .cover {
-	background: url(/assets/images/bookcover.png) no-repeat;
-	background-size: 100% 100%;
+  background: url('/assets/images/bookcover.png') no-repeat;
+  background-size: 100% 100%;
 }
 
 .back {
-	background: url(/assets/images/bookbacks.jpg) no-repeat;
-	background-size: cover;
+  background: url('/assets/images/bookbacks.jpg') no-repeat;
+  background-size: cover;
 }
 
 .back:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba( 84, 51, 0, 0.35);
+  background: rgba(84, 51, 0, .35);
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .inner {
-	background: url(/assets/images/bookbacks.jpg) cover;
-	transform: rotate(180deg);
+  background: url('/assets/images/bookbacks.jpg') cover;
+  transform: rotate(180deg);
 }
