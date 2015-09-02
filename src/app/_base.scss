@@ -15,7 +15,10 @@ body {
 }
 
 header {
-  margin-bottom: 50px;
+  background: rgba(0, 0, 0, .65);
+  border-bottom: .1em solid $brand-grey;
+  margin-bottom: 15%;
+  padding-bottom: 15px;
   text-align: center;
   width: 100%;
 
@@ -33,6 +36,7 @@ nav {
     color: $brand-light;
     display: inline-block;
     font-family: 'Roboto', 400;
+    margin: 2px 1px;
     padding: 3px 6px;
     transition: color .5s, background-color .5s;
   }
@@ -43,22 +47,22 @@ nav {
   }
   
   .effect-li {
-    border: 1px solid $brand-purple;
-    color: $brand-purple;
-  }
-  
-  .effect-li:hover {
-    background-color: $brand-purple;
-    color: $brand-basic;
-  }
-  
-  .class-li {
     border: 1px solid $brand-red;
     color: $brand-red;
   }
   
-  .class-li:hover {
+  .effect-li:hover {
     background-color: $brand-red;
+    color: $brand-basic;
+  }
+  
+  .class-li {
+    border: 1px solid $brand-blue;
+    color: $brand-blue;
+  }
+  
+  .class-li:hover {
+    background-color: $brand-blue;
     color: $brand-basic;
   }
 }
@@ -88,7 +92,6 @@ main {
 
   p {
     @include overlay-shadow;
-    background: rgba(0, 0, 0, .65);
     font-family: 'Bitter', 400;
     font-size: 36px;
     padding: 30px 0;
@@ -127,9 +130,9 @@ main {
 }
 
 .book-section {
-  background: $brand-basic-lighter;
-  border-bottom: .1em solid $brand-light;
-  border-top: .1em solid $brand-light;
+  background: rgba(0, 0, 0, .65);
+  border-bottom: .1em solid $brand-grey;
+  border-top: .1em solid $brand-grey;
   height: inherit;
 }
 
@@ -137,7 +140,7 @@ main {
   padding: 15px 0 0 5px;
 }
 
-.page {
+.paper-page {
   background: url('/assets/images/parchment.gif') no-repeat;
   background-size: cover;
 }
