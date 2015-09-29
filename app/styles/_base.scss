@@ -125,17 +125,17 @@ main {
 }
 
 .book-section {
-	background: $brand-basic-lighter;
-	border-top: 0.1em solid $brand-light;
-	border-bottom: 0.1em solid $brand-light;
-	height: inherit;
+  background: rgba(0, 0, 0, .65);
+  border-bottom: .1em solid $brand-grey;
+  border-top: .1em solid $brand-grey;
+  height: inherit;
 }
 
 .book {
 	padding: 15px 0 0 5px;
 }
 
-.page {
+.paper-page {
 	background: url(../images/parchment.gif) no-repeat;
 	background-size: cover;
 }
@@ -148,4 +148,20 @@ main {
 .back {
 	background: url(../images/bookbacks.jpg) no-repeat;
 	background-size: cover;
+}
+
+.back:before {
+  background: rgba(84, 51, 0, .35);
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.inner {
+  background: url('/assets/images/bookbacks.jpg') cover;
+  transform: rotate(180deg);
 }

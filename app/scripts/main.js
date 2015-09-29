@@ -1,4 +1,4 @@
-(function() {
+(function($) {
 
 	'use strict';
 
@@ -9,39 +9,43 @@
 
   var container = $('.book');
 
-	$(document).ready(function() {
+	//animation for slide-pages
+	$('#circle-slide').click(function() {
+		$('html, body').animate({
+			scrollTop: $('#slide-page')
+		}, 2000);
+		console.log('clicked');
+	});
 
-		//animation for slide-pages
-		$('#circle-slide').click(function() {
-			$('html, body').animate({
-				scrollTop: $('#slide-page')
-			}, 2000);
-			console.log('clicked');
-		});
-console.log($(window).outerWidth());
-		//turn.js integration
-		$('#flipbook').turn({
-			width: $(window).outerWidth() - 30,
-			height: (509 / 1418) * $(window).outerWidth() - 30,
-			acceleration: true,
-      gradients: !$.isTouch,
-      autoCenter: true,
-      elevation: 80,
-      when: {
-      	turned: function (e, page) {
-      		console.log('page turned');
-      	}
-      }
-		});
+	//turn.js integration
+	$('#flipbook').turn({
+		width: $(window).outerWidth() - 30,
+		height: (509 / 1418) * $(window).outerWidth() - 30,
+		acceleration: true,
+    gradients: !$.isTouch,
+    autoCenter: true,
+    elevation: 80,
+    when: {
+    	turned: function () {
+
+        //Test Mashape API
+        $.ajax({
+          url: 'https://omgvamp-hearthstone-v1.p.mashape.com/cards/Deathwing',
+          type: 'GET',
+          dataType: 'json',
+          beforeSend: function(xhr) {
+            xhr.setRequestHeader('X-Mashape-Key', '5G0t628eDbmshlFiTlaJVqPLQVNLp1adQWNjsn5o8wHnCY4Pa4');
+          },
+          success: function(result) {
+            $('.paper-page').html('<img src=\"' + result[0].imgGold + '\" />');
+          }
+        });
+    	}
+    }
 	});
 
 	function positionBook() {
-      var viewPortHeight = document.getElementById('zoomView').scrollHeight;
-
-      $('.zoom-viewport').height();
-      var newTop = (viewPortHeight - $('#fbContainer').height()) / 2;
-
-      $('#fbContainer').css('top', newTop + 'px');
+      //TODO: position book based on window size/resize
   }
 
 	window.onresize = function () {
@@ -70,4 +74,4 @@ console.log($(window).outerWidth());
       }
   }
 
-})();
+})(jQuery);
